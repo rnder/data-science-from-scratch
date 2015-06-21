@@ -44,7 +44,7 @@
 9. [데이터 수집하기](ch9_getting_data.py)
 10. [데이터 다루기](ch10_working_with_data.py)
 11. [기계학습](ch11_machine_learning.py)
-12. [k-근점이웃](ch12_nearest_neighbors.py)
+12. [k-근접이웃](ch12_nearest_neighbors.py)
 13. [나이브 베이즈](ch13_naive_bayes.py)
 14. [단순 선형회귀](ch14_simple_linear_regression.py)
 15. [다중 선형회귀](ch15_multiple_regression.py)
