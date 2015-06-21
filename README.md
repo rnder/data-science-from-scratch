@@ -33,15 +33,15 @@
 
 ## 책의 목차
 
-1. [들어가기](code/ch1_introduction.py)
+1. [들어가기](code/ch01_introduction.py)
 2. 파이썬 집중강좌
-3. [데이터 시각화](code/ch3_visualizing_data.py)
-4. [선형대수](code/ch4_linear_algebra.py)
-5. [통계](code/ch5_statistics.py)
-6. [확률](code/ch6_probability.py)
-7. [가설과 추론](code/ch7_hypothesis_and_inference.py)
-8. [경사 하강법](code/ch8_gradient_descent.py)
-9. [데이터 수집하기](code/ch9_getting_data.py)
+3. [데이터 시각화](code/ch03_visualizing_data.py)
+4. [선형대수](code/ch04_linear_algebra.py)
+5. [통계](code/ch05_statistics.py)
+6. [확률](code/ch06_probability.py)
+7. [가설과 추론](code/ch07_hypothesis_and_inference.py)
+8. [경사 하강법](code/ch08_gradient_descent.py)
+9. [데이터 수집하기](code/ch09_getting_data.py)
 10. [데이터 다루기](code/ch10_working_with_data.py)
 11. [기계학습](code/ch11_machine_learning.py)
 12. [k-근접이웃](code/ch12_nearest_neighbors.py)
