@@ -6,7 +6,7 @@ from collections import Counter
 import matplotlib.pyplot as plt
 
 
-def make_simple_line_chart(plt):
+def make_simple_line_chart():
     """ 그림 3-1. 간단한 선 그래프 """
 
     years = [1950, 1960, 1970, 1980, 1990, 2000, 2010]
@@ -23,7 +23,7 @@ def make_simple_line_chart(plt):
     plt.show()
 
 
-def make_simple_bar_chart(plt):
+def make_simple_bar_chart():
     """ 그림 3-2. 간단한 막대 그래프 """
 
     movies = ["Annie Hall", "Ben-Hur", "Casablanca", "Gandhi", "West Side Story"]
@@ -44,7 +44,7 @@ def make_simple_bar_chart(plt):
     plt.show()
 
 
-def make_histogram(plt):
+def make_histogram():
     """ 그림 3-3. 막대 그래프로 히스토그램 그리기 """
 
     grades = [83,95,91,87,70,0,85,82,100,67,73,77,0]
@@ -63,7 +63,7 @@ def make_histogram(plt):
     plt.show()
 
 
-def make_misleading_y_axis(plt, mislead=True):
+def make_misleading_y_axis(mislead=True):
     """
     그림 3-4. y축이 오해를 불러일으키는 그래프,
     그림 3-5. y축히 오해를 불러일으키지 않는 그래프 """
@@ -89,7 +89,7 @@ def make_misleading_y_axis(plt, mislead=True):
     plt.show()
 
 
-def make_several_line_charts(plt):
+def make_several_line_charts():
     """ 그림 3-6. 여러 개의 선 그래프를 동시에 그리고 범례 표기하기 """
 
     variance     = [1,2,4,8,16,32,64,128,256]
@@ -113,7 +113,7 @@ def make_several_line_charts(plt):
     plt.show()
 
 
-def make_scatter_plot(plt):
+def make_scatter_plot():
     """ 그림 3-7. 친구의 수와 사이트 체류 시간에 관한 산점도 """
 
     friends = [ 70, 65, 72, 63, 71, 64, 60, 64, 67]
@@ -135,7 +135,7 @@ def make_scatter_plot(plt):
     plt.show()
 
 
-def make_scatterplot_axes(plt, equal_axes=False):
+def make_scatterplot_axes(equal_axes=False):
     """
     그림 3-8. 축 간 공정한 비교를 할 수 없는 산점도
     그림 3-9. 축 간 공정한 비교를 할 수 있는 산점도 """
@@ -158,11 +158,11 @@ def make_scatterplot_axes(plt, equal_axes=False):
 
 if __name__ == "__main__":
 
-    make_simple_line_chart(plt)
-    make_simple_bar_chart(plt)
-    make_histogram(plt)
-    make_misleading_y_axis(plt, mislead=True)
-    make_misleading_y_axis(plt, mislead=False)
-    make_several_line_charts(plt)
-    make_scatterplot_axes(plt, equal_axes=False)
-    make_scatterplot_axes(plt, equal_axes=True)
+    make_simple_line_chart()
+    make_simple_bar_chart()
+    make_histogram()
+    make_misleading_y_axis(mislead=True)
+    make_misleading_y_axis(mislead=False)
+    make_several_line_charts()
+    make_scatterplot_axes(equal_axes=False)
+    make_scatterplot_axes(equal_axes=True)
