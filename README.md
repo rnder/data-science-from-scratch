@@ -1,23 +1,32 @@
 밑바닥부터 시작하는 데이터 사이언스
 ===================================
 
-["밑바닥부터 시작하는 데이터 사이언스"](#)에 나오는 예시 코드의 저장소입니다.
+["밑바닥부터 시작하는 데이터 사이언스"](#)의 코드 저장소입니다.
+이곳에는 책에 수록된 예시 코드와 링크 정보가 담겨 있습니다.
 
-각 예시 코드는 다음과 같이 `/code` 디렉토리에서 모듈로 불러 사용할 수 있도록 설계 되었습니다.
+책에 오타나 오류가 있는 경우, 우측의 위키(Wiki)에 해당 내용을 기록해주시기 바랍니다.
 
-```python
-from ch4_linear_algebra import distance, vector_mean
-v = [1, 2, 3]
-w = [4, 5, 6]
-print distance(v, w)
-print vector_mean([v, w])
-```
+## 예시 코드
+
+각 예시 코드는 다음의 두 가지 방법으로 사용할 수 있습니다.
+
+1. 같이 `/code` 디렉토리에서 모듈로 불러 사용한다.
+
+    ```python
+    from ch4_linear_algebra import distance, vector_mean
+    v = [1, 2, 3]
+    w = [4, 5, 6]
+    print distance(v, w)
+    print vector_mean([v, w])
+    ```
   
-또는, 명령줄에서 직접 실행하면 책에 실린 예시를 그대로 돌릴 수 있습니다:
+1. 명령줄에서 책의 데모를 직접 실행한다.
 
-```bat
-python ch22_recommender_systems.py
-```  
+    ```bat
+    python ch22_recommender_systems.py
+    ```
+
+## 링크 정보
 
 추가적으로, [links.md](links.md) 파일에는 책에 실린 모든 유용한 링크 정보가 담겨 있다.
 
