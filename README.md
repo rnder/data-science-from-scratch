@@ -1,50 +1,51 @@
-Data Science from Scratch
-=========================
+밑바닥부터 시작하는 데이터 사이언스
+===================================
 
-Here's all the code and examples from my book __[Data Science from Scratch](http://joelgrus.com/2015/04/26/data-science-from-scratch-first-principles-with-python/)__.
+["밑바닥부터 시작하는 데이터 사이언스"](#)에 나오는 예시 코드의 저장소입니다.
 
-Each can be imported as a module, for example (after you cd into the /code directory):
+각 예시 코드는 다음과 같이 `/code` 디렉토리에서 모듈로 불러 사용할 수 있도록 설계 되었습니다.
 
 ```python
-from linear_algebra import distance, vector_mean
+from ch4_linear_algebra import distance, vector_mean
 v = [1, 2, 3]
 w = [4, 5, 6]
 print distance(v, w)
 print vector_mean([v, w])
 ```
   
-Or can be run from the command line to get a demo of what it does (and to execute the examples from the book):
+또는, 명령줄에서 직접 실행하면 책에 실린 예시를 그대로 돌릴 수 있습니다:
 
 ```bat
-python recommender_systems.py
+python ch22_recommender_systems.py
 ```  
 
-Additionally, I've collected all the [links](https://github.com/joelgrus/data-science-from-scratch/blob/master/links.md) from the book.
+추가적으로, [links.md](links.md) 파일에는 책에 실린 모든 유용한 링크 정보가 담겨 있다.
 
-## Table of Contents
 
-1. Introduction
-2. A Crash Course in Python
-3. [Visualizing Data](https://github.com/joelgrus/data-science-from-scratch/blob/master/code/visualizing_data.py)
-4. [Linear Algebra](https://github.com/joelgrus/data-science-from-scratch/blob/master/code/linear_algebra.py)
-5. [Statistics](https://github.com/joelgrus/data-science-from-scratch/blob/master/code/statistics.py)
-6. [Probability](https://github.com/joelgrus/data-science-from-scratch/blob/master/code/probability.py)
-7. [Hypothesis and Inference](https://github.com/joelgrus/data-science-from-scratch/blob/master/code/hypothesis_and_inference.py)
-8. [Gradient Descent](https://github.com/joelgrus/data-science-from-scratch/blob/master/code/gradient_descent.py)
-9. [Getting Data](https://github.com/joelgrus/data-science-from-scratch/blob/master/code/getting_data.py)
-10. [Working With Data](https://github.com/joelgrus/data-science-from-scratch/blob/master/code/working_with_data.py)
-11. [Machine Learning](https://github.com/joelgrus/data-science-from-scratch/blob/master/code/machine_learning.py)
-12. [k-Nearest Neighbors](https://github.com/joelgrus/data-science-from-scratch/blob/master/code/nearest_neighbors.py)
-13. [Naive Bayes](https://github.com/joelgrus/data-science-from-scratch/blob/master/code/naive_bayes.py)
-14. [Simple Linear Regression](https://github.com/joelgrus/data-science-from-scratch/blob/master/code/simple_linear_regression.py)
-15. [Multiple Regression](https://github.com/joelgrus/data-science-from-scratch/blob/master/code/multiple_regression.py)
-16. [Logistic Regression](https://github.com/joelgrus/data-science-from-scratch/blob/master/code/logistic_regression.py)
-17. [Decision Trees](https://github.com/joelgrus/data-science-from-scratch/blob/master/code/decision_trees.py)
-18. [Neural Networks](https://github.com/joelgrus/data-science-from-scratch/blob/master/code/neural_networks.py)
-19. [Clustering](https://github.com/joelgrus/data-science-from-scratch/blob/master/code/clustering.py)
-20. [Natural Language Processing](https://github.com/joelgrus/data-science-from-scratch/blob/master/code/natural_language_processing.py)
-21. [Network Analysis](https://github.com/joelgrus/data-science-from-scratch/blob/master/code/network_analysis.py)
-22. [Recommender Systems](https://github.com/joelgrus/data-science-from-scratch/blob/master/code/recommender_systems.py)
-23. [Databases and SQL](https://github.com/joelgrus/data-science-from-scratch/blob/master/code/databases.py)
-24. [MapReduce](https://github.com/joelgrus/data-science-from-scratch/blob/master/code/mapreduce.py)
-25. Go Forth And Do Data Science
+## 책의 목차
+
+1. [들어가기](ch1_introduction.py)
+2. 파이썬 집중강좌
+3. [데이터 시각화](ch3_visualizing_data.py)
+4. [선형대수](ch4_linear_algebra.py)
+5. [통계](ch5_statistics.py)
+6. [확률](ch6_probability.py)
+7. [가설과 추론](ch7_hypothesis_and_inference.py)
+8. [경사 하강법](ch8_gradient_descent.py)
+9. [데이터 수집하기](ch9_getting_data.py)
+10. [데이터 다루기](ch10_working_with_data.py)
+11. [기계학습](ch11_machine_learning.py)
+12. [k-근점이웃](ch12_nearest_neighbors.py)
+13. [나이브 베이즈](ch13_naive_bayes.py)
+14. [단순 선형회귀](ch14_simple_linear_regression.py)
+15. [다중 선형회귀](ch15_multiple_regression.py)
+16. [로지스틱 회귀](ch16_logistic_regression.py)
+17. [의사결정나무](ch17_decision_trees.py)
+18. [신경망](ch18_neural_networks.py)
+19. [군집화](ch19_clustering.py)
+20. [자연어 처리](ch20_natural_language_processing.py)
+21. [네트워크 분석](ch21_network_analysis.py)
+22. [추천 시스템](ch22_recommender_systems.py)
+23. [데이터베이스와 SQL](ch23_databases.py)
+24. [맵리듀스](ch24_mapreduce.py)
+25. 본격적으로 데이터 사이언스하기
