@@ -1,23 +1,28 @@
 # -*- coding: utf-8 -*-
 
 
-from __future__ import division
+from __future__ import division, unicode_literals
 from collections import Counter
 import math, random
 
 from ch04_linear_algebra import distance, vector_subtract, scalar_multiply
 
 
+# 8.1. 경사 하강법에 숨은 의미
+
 def sum_of_squares(v):
-    """computes the sum of squared elements in v"""
+    """ Computes the sum of squared elements in v """
     return sum(v_i ** 2 for v_i in v)
 
+
+# 8.2. 경사 추정하기
 
 def difference_quotient(f, x, h):
     return (f(x + h) - f(x)) / h
 
 
 def plot_estimated_derivative():
+    """ 그림 8-3. 나름 유용한 미분 근사값 """
 
     def square(x):
         return x * x
@@ -28,6 +33,7 @@ def plot_estimated_derivative():
     derivative_estimate = lambda x: difference_quotient(square, x, h=0.00001)
 
     # 두 계산식에 따른 결과값이 거의 비슷함을 보여주기 위한 그래프
+    import matplotlib.pyplot as plt
     x = range(-10, 10)
     plt.title("실제 미분값 vs. 근사값")
     plt.plot(x, map(derivative, x), 'rx', label='실제값')           # 빨간색 x
@@ -37,9 +43,9 @@ def plot_estimated_derivative():
 
 
 def partial_difference_quotient(f, v, i, h):
+    """ 함수 f의 i번째 편도함수가 v에서 가지는 값 """
 
-    # add h to just the i-th element of v
-    w = [v_j + (h if j == i else 0)
+    w = [v_j + (h if j == i else 0)     # h를 v의 i번째 변수에만 더해주자
          for j, v_j in enumerate(v)]
 
     return (f(w) - f(v)) / h
@@ -50,8 +56,11 @@ def estimate_gradient(f, v, h=0.00001):
             for i, _ in enumerate(v)]
 
 
+# 8.3. 경사 적용하기
+
 def step(v, direction, step_size):
-    """move step_size in the direction from v"""
+    """ move step_size in the direction from v"""
+
     return [v_i + step_size * direction_i
             for v_i, direction_i in zip(v, direction)]
 
@@ -59,6 +68,8 @@ def step(v, direction, step_size):
 def sum_of_squares_gradient(v):
     return [2 * v_i for v_i in v]
 
+
+# 8.4. 적절한 스텝 크기 정하기
 
 def safe(f):
     """define a new function that wraps f and return it"""
@@ -70,11 +81,7 @@ def safe(f):
     return safe_f
 
 
-#
-#
-# minimize / maximize batch
-#
-#
+# 8.5. 전부 조합하기
 
 def minimize_batch(target_fn, gradient_fn, theta_0, tolerance=0.000001):
     """use gradient descent to find theta that minimizes target function"""
@@ -117,9 +124,8 @@ def maximize_batch(target_fn, gradient_fn, theta_0, tolerance=0.000001):
                           theta_0,
                           tolerance)
 
-#
-# minimize / maximize stochastic
-#
+
+# 8.6. SGD
 
 def in_random_order(data):
     """generator that returns the elements of data in random order"""
