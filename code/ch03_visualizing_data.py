@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
+from __future__ import unicode_literals
 from collections import Counter
 
 import matplotlib.pyplot as plt
@@ -16,7 +17,7 @@ def make_simple_line_chart():
     plt.plot(years, gdp, color='green', marker='o', linestyle='solid')
 
     # add a title
-    plt.title("Nominal GDP")
+    plt.title("명목 GDP")
 
     # add a label to the y-axis
     plt.ylabel("Billions of $")
@@ -90,7 +91,7 @@ def make_misleading_y_axis(mislead=True):
 
 
 def make_several_line_charts():
-    """ 그림 3-6. 여러 개의 선 그래프를 동시에 그리고 범례 표기하기 """
+    """ 그림 3-6. 여러 개의 선 그래프와 범례 동시에 그리기 """
 
     variance     = [1,2,4,8,16,32,64,128,256]
     bias_squared = [256,128,64,32,16,8,4,2,1]
