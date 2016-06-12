@@ -36,7 +36,7 @@
 1. [들어가기](code/ch01_introduction.py)
 2. 파이썬 집중강좌
 3. 데이터 시각화 - [py](code/ch03_visualizing_data.py), [ipynb](notebook/ch03_visualizing_data.ipynb)
-4. [선형대수](code/ch04_linear_algebra.py)
+4. 선형대수 - [py](code/ch04_linear_algebra.py), [ipynb](notebook/ch04_linear_algebra.ipynb) 
 5. [통계](code/ch05_statistics.py)
 6. [확률](code/ch06_probability.py)
 7. [가설과 추론](code/ch07_hypothesis_and_inference.py)
