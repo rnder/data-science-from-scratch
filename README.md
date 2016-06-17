@@ -38,7 +38,7 @@
 3. 데이터 시각화 - [py](code/ch03_visualizing_data.py), [ipynb](notebook/ch03_visualizing_data.ipynb)
 4. 선형대수 - [py](code/ch04_linear_algebra.py), [ipynb](notebook/ch04_linear_algebra.ipynb) 
 5. 통계 - [py](code/ch05_statistics.py), [ipynb](notebook/ch05_statistics.ipynb)
-6. [확률](code/ch06_probability.py)
+6. 확률 - [py](code/ch06_probability.py), [ipynb](notebook/ch06_probability.ipynb)
 7. [가설과 추론](code/ch07_hypothesis_and_inference.py)
 8. [경사 하강법](code/ch08_gradient_descent.py)
 9. [데이터 수집하기](code/ch09_getting_data.py)
