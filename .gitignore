@@ -139,4 +139,4 @@ fabric.properties
 .DS_Store
 
 # Customize
-twitter_app.conf
+notebook/twitter_app.conf
