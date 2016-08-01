@@ -43,7 +43,7 @@
  8. 경사 하강법 - [py](code/ch08_gradient_descent.py), [ipynb](notebook/ch08_gradient_descent.ipynb)
  9. 데이터 수집하기 - [py](code/ch09_getting_data.py), [ipynb1](notebook/ch09_code_test.ipynb), [ipynb2](notebook/ch09_getting_data.ipynb)
  10. 데이터 다루기 - [py](code/ch10_working_with_data.py), [ipynb](notebook/ch10_working_with_data.ipynb)
- 11. [기계학습](code/ch11_machine_learning.py)
+ 11. 기계학습 - [py](code/ch11_machine_learning.py), [ipynb](notebook/ch11_machine_learning.ipynb)
  12. [k-근접이웃](code/ch12_nearest_neighbors.py)
  13. [나이브 베이즈](code/ch13_naive_bayes.py)
  14. [단순 선형회귀](code/ch14_simple_linear_regression.py)
